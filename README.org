@@ -1,0 +1,13 @@
+#+HTML_HEAD: <link rel="stylesheet" href="../static/style.css">
+#+HTML_HEAD: <link rel="icon" href="../static/pavo.png" type="image/png">
+#+EXPORT_FILE_NAME: index
+#+TITLE: Pavo
+
+Pavo wraps other programs with /unveil/ & /pledge/.
+
+| Project Home    | [[https://andinus.nand.sh/pavo/][Pavo]]           |
+| Source Code     | [[https://tildegit.org/andinus/pavo][Andinus / Pavo]] |
+| GitHub (Mirror) | [[https://github.com/andinus/pavo][Pavo - GitHub]]  |
+
+*Tested on*:
+- OpenBSD 6.6
