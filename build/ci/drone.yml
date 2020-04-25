@@ -1,0 +1,51 @@
+---
+kind: pipeline
+name: testing
+
+steps:
+- name: vet
+  image: golang:1.13
+  commands:
+    - go vet ./...
+
+- name: test
+  image: golang:1.13
+  commands:
+    - go test -v ./...
+
+---
+kind: pipeline
+name: build
+
+steps:
+- name: openbsd-amd64
+  image: golang:1.13
+  environment:
+    GOARCH: amd64
+    GOOS: openbsd
+  commands:
+    - go build
+
+- name: openbsd-386
+  image: golang:1.13
+  environment:
+    GOARCH: 386
+    GOOS: openbsd
+  commands:
+    - go build
+
+- name: openbsd-arm
+  image: golang:1.13
+  environment:
+    GOARCH: arm
+    GOOS: openbsd
+  commands:
+    - go build
+
+- name: openbsd-arm64
+  image: golang:1.13
+  environment:
+    GOARCH: arm64
+    GOOS: openbsd
+  commands:
+    - go build
