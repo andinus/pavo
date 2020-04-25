@@ -1,0 +1,8 @@
+{
+    "config": [
+	{
+	    "cmd": "echo",
+	    "promises": "stdio"
+	}
+    ]
+}
