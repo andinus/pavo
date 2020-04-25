@@ -1,8 +1,8 @@
 {
     "config": [
 	{
-	    "cmd": "echo",
-	    "promises": "stdio"
+	    "command": "echo",
+	    "execpromises": "stdio"
 	}
     ]
 }
