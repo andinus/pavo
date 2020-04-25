@@ -12,6 +12,9 @@ Pavo wraps other programs with /unveil/ & /pledge/.
 *Tested on*:
 - OpenBSD 6.6 amd64
 
+*Note*: This program has only been tested to work with /echo/, it fails with
+many other commands.
+
 * Working
 - Pavo parses the config file
 - Directories & commands are unveiled
@@ -48,6 +51,8 @@ killed.
 * Installation
 ** Pre-built binaries
 Pre-built binaries are available for OpenBSD (386, amd64, arm, arm64).
+
+Example config file can be [[https://github.com/andinus/pavo/blob/master/configs/pavo.json][downloaded here]].
 *** v0.1.0
 Download the binaries from [[https://archive.org/details/pavo-v0.1.0][archive.org]]
 
