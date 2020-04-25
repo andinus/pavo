@@ -16,7 +16,7 @@ func initPledge() {
 	//
 	// Note: Don't forget to change blockUnveil() if you add
 	// anything new here.
-	err := lynx.PledgePromises("unveil stdio rpath exec")
+	err := lynx.PledgePromises("unveil stdio rpath exec proc")
 	if err != nil {
 		fmt.Printf("%s :: %s",
 			"initPledge failed",
