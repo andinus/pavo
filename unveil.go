@@ -19,7 +19,7 @@ func blockUnveil() {
 
 	// We drop unveil from promises after blocking it. We drop
 	// rpath too because the config file has been read.
-	err = lynx.PledgePromises("stdio exec")
+	err = lynx.PledgePromises("stdio rpath exec proc")
 	if err != nil {
 		fmt.Printf("%s :: %s",
 			"blockUnveil failed",
