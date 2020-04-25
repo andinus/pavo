@@ -18,3 +18,30 @@ Pavo wraps other programs with /unveil/ & /pledge/.
 - Execpromises are added
 - Unveil calls are blocked
 - Command is executed
+* How is it useful?
+Let's take =echo= as an example. =echo='s job is to echo what you pass to
+it. It should never touch your =$HOME/.ssh=, let's say the next =echo=
+update is malicious & it tries to send your =$HOME/.ssh= to the attacker's
+servers. It will be able to do that but not if you wrap it around pavo.
+
+=pavo echo= will parse the config & force /unveil/ & /pledge/ on the malicious
+=echo=, it won't be able to read your =$HOME/.ssh= directory if it isn't
+present in pavo's config. Also uploading the file to the internet will
+kill the program immediately.
+
+This assumes that pavo's config file is secure in the first place, if it
+isn't then the attacker could simply change it. Also, =echo= is a bad
+example for this.
+
+Let's take another example. Let's say you want to run a binary
+downloaded from the internet, you kinda trust that person (you don't) &
+they say that the binary is a simple ascii game & will just print to
+terminal, do nothing else. You could wrap this binary around pavo before
+running it & give it limited permissions, like don't unveil anything &
+put only =stdio= in execpromises.
+
+If that binary tries to do anything apart from =stdio= the program will be
+killed.
+
+- Pavo's config file should be unwriteable at rest
+- The config file should only be writeable by the user
