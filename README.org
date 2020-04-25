@@ -50,7 +50,8 @@ killed.
 Pre-built binaries are available for OpenBSD (386, amd64, arm, arm64).
 *** v0.1.0
 Download the binaries from [[https://archive.org/details/pavo-v0.1.0][archive.org]]
-**** Hashes
+
+*Example URL*: =https://archive.org/download/pavo-v0.1.0/pavo-v0.1.0-openbsd-386=
 | Arch  | SHA256                                                           |
 |-------+------------------------------------------------------------------|
 | 386   | 926d6009567fec6c270eea16d380b58f396be6f1d51d513ff0e43286760f4fa9 |
