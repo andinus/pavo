@@ -10,4 +10,11 @@ Pavo wraps other programs with /unveil/ & /pledge/.
 | GitHub (Mirror) | [[https://github.com/andinus/pavo][Pavo - GitHub]]  |
 
 *Tested on*:
-- OpenBSD 6.6
+- OpenBSD 6.6 amd64
+
+* Working
+- Pavo parses the config file
+- Directories & commands are unveiled
+- Execpromises are added
+- Unveil calls are blocked
+- Command is executed
