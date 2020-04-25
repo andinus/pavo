@@ -1,0 +1,8 @@
+*.dump
+pavo.dump
+*.core
+pavo.core
+ktrace
+ktrace.out
+kdump
+kdump.out
