@@ -30,10 +30,25 @@ func blockUnveil() {
 
 // initUnveil initializes unveil for inital use.
 func initUnveil() {
-	err := lynx.Unveil(configFile, "rc")
+	err := lynx.Unveil(configFile(), "rc")
 	if err != nil {
 		fmt.Printf("%s :: %s",
 			"Unveil configFile failed",
+			err.Error())
+		os.Exit(1)
+	}
+
+	// os.Exec fails if "/dev/null" is not unveiled & for some
+	// reason it calls "/dev/urandom" inititally so we unveil it
+	// too because there should be no harm in doing so.
+	paths := make(map[string]string)
+	paths["/dev/null"] = "r"
+	paths["/dev/urandom"] = "r"
+
+	err = lynx.UnveilPaths(paths)
+	if err != nil {
+		fmt.Printf("%s :: %s",
+			"Unveil failed",
 			err.Error())
 		os.Exit(1)
 	}
