@@ -45,3 +45,15 @@ killed.
 
 - Pavo's config file should be unwriteable at rest
 - The config file should only be writeable by the user
+* Installation
+** Pre-built binaries
+Pre-built binaries are available for OpenBSD (386, amd64, arm, arm64).
+*** v0.1.0
+Download the binaries from [[https://archive.org/details/pavo-v0.1.0][archive.org]]
+**** Hashes
+| Arch  | SHA256                                                           |
+|-------+------------------------------------------------------------------|
+| 386   | 926d6009567fec6c270eea16d380b58f396be6f1d51d513ff0e43286760f4fa9 |
+| amd64 | b0fadad9e0328377b31eb70d369a0e2b91f851310e579abab4023496776798ca |
+| arm   | 0033409f32569c2f59879bb256854b7c6f1043ebf3fe548c7ee4d9b7132839ea |
+| arm64 | b75648c5a3b76d51cad63172ec164eff4974a6a4cca453fe41441d556fa04a07 |
