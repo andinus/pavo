@@ -5,8 +5,11 @@
 
 Pavo wraps other programs with /unveil/ & /pledge/.
 
+*Note*: This is still a work in progress, just the progress is very slow.
+I still think this is a neat idea, will complete this someday.
+
 | Project Home    | [[https://andinus.nand.sh/pavo/][Pavo]]           |
-| Source Code     | [[https://tildegit.org/andinus/pavo][Andinus / Pavo]] |
+| Source Code     | [[https://git.tilde.institute/andinus/pavo][Andinus / Pavo]] |
 | GitHub (Mirror) | [[https://github.com/andinus/pavo][Pavo - GitHub]]  |
 
 *Tested on*:
