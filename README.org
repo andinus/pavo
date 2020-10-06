@@ -1,5 +1,4 @@
-#+HTML_HEAD: <link rel="stylesheet" href="../static/style.css">
-#+HTML_HEAD: <link rel="icon" href="../static/pavo.png" type="image/png">
+#+SETUPFILE: ~/.emacs.d/org-templates/projects.org
 #+EXPORT_FILE_NAME: index
 #+TITLE: Pavo
 
@@ -7,6 +6,12 @@ Pavo wraps other programs with /unveil/ & /pledge/.
 
 *Note*: This is still a work in progress, just the progress is very slow.
 I still think this is a neat idea, will complete this someday.
+
+*Note*: Someone made this & posted it on =misc@=.
+#+BEGIN_QUOTE
+[ANNOUNCE] pledge(1): an unprivileged sandboxing tool for OpenBSD
+https://marc.info/?l=openbsd-misc&m=160070752916257&w=2
+#+END_QUOTE
 
 | Project Home    | [[https://andinus.nand.sh/pavo/][Pavo]]           |
 | Source Code     | [[https://git.tilde.institute/andinus/pavo][Andinus / Pavo]] |
